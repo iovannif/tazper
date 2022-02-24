@@ -1,0 +1,13 @@
+/* Navegacion */
+#buscar{
+    margin: 7px 8px 1px 20px !important;
+}
+#busqueda{
+    margin-top:7px !important;        
+}
+
+#paginacion{
+    position:absolute;
+    left:501px;
+    margin-right:10px;
+}

@@ -1,0 +1,53 @@
+#mdf .titulo{
+    color: #C90000;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px lightgrey;
+    padding: 2px 0 14px 0;
+}
+
+#mdf label{
+    text-shadow: 0 0 0 #939393;
+}
+
+#mdf input{
+    height:32px;
+    padding: 0 0 0 6px;
+    margin-left:0;
+    border-radius: 3px;
+    box-shadow:none;
+    font-family:arial;
+    width: 110px !important;
+}
+
+#mdf .c_botones{
+    margin:3px 0 3px 0;
+}
+
+#mdf_submit{
+    background: #24B800;
+    border: 1px solid #22AB00;
+}
+#mdf_submit:hover{
+    background:#22AB00;
+    border: 1px solid #22AB00;
+}
+#cancelar_mdf{
+    background: #dc3545;
+    border: 1px solid #dc3545;
+}
+#cancelar_mdf:hover{
+    background: #CC3140;
+    border: 1px solid #CC3140;
+}
+
+#campo_vacio{
+    top:41% !important;
+    z-index: 1;
+    box-shadow:none !important;
+}
+.error{
+    color:red;
+    text-shadow: 0 0 0 #939393;
+    padding-top: 12px;
+}

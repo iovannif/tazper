@@ -1,0 +1,37 @@
+#create .titulo{
+    color: #C90000;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px lightgrey;
+    padding: 2px 0 14px 0;
+}
+
+#create label[for=descripcion]{
+    text-shadow: 0 0 0 #939393;
+}
+
+#create input{
+    height:32px;
+    padding: 0 0 0 6px;
+}
+
+#masiva{
+    vertical-align:middle;
+}
+
+#create_submit{
+    background: #24B800;
+    border: 1px solid #22AB00;
+}
+#create_submit:hover{
+    background:#22AB00;
+    border: 1px solid #22AB00;
+}
+#cancelar_c{
+    background: #dc3545;
+    border: 1px solid #dc3545;
+}
+#cancelar_c:hover{
+    background: #CC3140;
+    border: 1px solid #CC3140;
+}

@@ -1,0 +1,164 @@
+/* Navegacion 2 */
+.masiva{
+    position:absolute;
+    bottom: -269px;
+    left: 345px;		
+}
+
+/* Contenido */
+/* campos pequeños */
+#cant::-webkit-input-placeholder{
+    font-size: 14px;
+}	
+
+/* cuadros js */
+#productos{    
+    left: 340px;
+    top: 152px;
+}
+#material{        
+    left: 340px;
+    top:451px;
+}
+.lista_js{
+    width:288px !important;
+}
+/* .cambiar2{
+    display:inline-block !important;
+} */
+
+/* Detalle */
+/*detalle titulo*/
+#detalle{
+    font-family: Raleway;
+    color: #C90000;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow: 1px 1px 1px lightgray;    
+    cursor:default;
+}
+#busca_material{
+    margin-left:72px;
+}
+#tabla_articulo input,.detalle input{
+    margin:0 !important;
+}
+
+/* carga articulo */
+#tabla_articulo{
+    /* border:1px solid black; */
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-bottom:20px;
+    cursor:default;
+    /* box-shadow: 0px 0px 1px 0px grey; */
+}
+#tabla_articulo td{
+    /* border:1px solid black; */
+    /* box-shadow: 0px 0px 1px 0px grey; */
+    padding:0;    
+}
+#tabla_articulo .head{
+    background: #F9F9F9;
+    color:#C90000;    
+    text-align:center;
+    font-size:15px;    
+    /* box-shadow: 0px 0px 1px 0px grey; */
+}
+#tabla_articulo .head td{
+    text-shadow: 1px 1px 1px #808080;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;    
+    box-shadow: 0px 0px 1px 0px grey;
+}
+#tabla_articulo .head .blank{
+    background:#fff;
+    box-shadow: none;
+}
+#tabla_articulo .agregar td{    
+    box-shadow: 0px 0px 1px 0px grey;
+}
+#tabla_articulo input{
+    border-radius:0 !important;
+    text-align:center;
+}
+#art_med{
+    border:0 !important;
+    box-shadow:none;
+    text-align:left !important;
+}
+.td_agregar{
+    box-shadow: none !important;
+    padding-left:4px !important;
+}
+
+.botones{
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px 4px;
+    margin: 0 -12px 0 -8px;
+    font-size: 16px;
+    border-radius:3px;
+}
+#agregar{
+    margin-left:0px;
+    margin-right:4px;
+    background:#72BB82;
+    border:#72BB82;
+    padding:2px 4px !important;
+}
+#agregar:hover{
+    background:#5A9668;
+    border:#5A9668;
+}
+
+/*detalle tabla (lista art)*/
+.detalle{
+    cursor:default;
+}
+.detalle td{
+    text-align:center;
+}
+.detalle .head td{
+    border-radius:3%;
+    text-shadow: 1px 1px 1px #000;
+    padding:4px 12px;
+    background: #C90000;
+    color:white;
+}
+.detalle .head .blank{
+    background:#fff;
+}
+.detalle .body td{
+    padding:3px 12px;
+}
+.detalle .linea:nth-child(odd) {
+    background-color:#EEEEEE;
+}
+.detalle .linea:nth-child(even) {
+    background-color:#fbfbfb;
+}
+.detalle input{
+    border:none !important;
+    box-shadow:none !important;
+    text-align:center !important;
+    background:none !important;
+}
+
+.td_quitar{
+    background:#fff !important;
+}
+.quitar{
+    margin-left: 0px;
+    margin-right: 4px;
+    background:#DF4C4C;
+    border:#DF4C4C;
+    visibility:hidden;
+    padding:2px 5px !important;
+}
+.quitar:hover{
+    background:red;
+    border:red;
+}

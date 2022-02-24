@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{margin:auto;
+        font-family:Calibri;
+        margin-top: 5px;
+        /*border:1px solid #000246;*/
+        /*width:98%;*/
+        }
+
+        .titulo{color:#FE2701;
+                font-size:26px;
+                font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+                /*text-align:left;*/
+                /*margin-top: 5px;*/
+                }
+
+        .negrita{font-weight:bold;}
+
+        .campos{text-align:center;
+                background-color:#FFF;
+                font-weight:bold;
+                color:#000;
+                }
+                
+        .campos2{text-align:center;
+                background-color:#FE2701;
+                font-weight:bold;
+                color:#FFF;
+                }		
+                        
+        .blanco{background-color:#FFF;}
+
+        .datos{text-align:center;}
+
+        .boton_nueva{font-weight:bold;}
+
+        .boton_registrar{font-weight:bold;}
+                        
+        .boton_factura{font-weight:bold;}
+
+        .boton_cancelar{font-weight:bold;}
+
+        .boton_ver{font-weight:bold;}
+
+        .boton_salir{font-weight:bold;}
+
+        .div{border:2px solid #000246;
+            width:68%;
+            margin:auto;
+            /* box-shadow: 1px 1px 3px 2px #6F6F6F; */
+            
+        }
+
+        td{border:hidden;}
+
+        input { 
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+
+        <table border="1" width='905' align="center">
+        <tr>
+            <td class="titulo" colspan="10">Ventas</td>
+        </tr>
+
+        <tr>
+            <td> <b>Nº Venta</b>: </td>
+            <td></td>
+            <td>
+                <input type='text' name='vta_nro' size='1' disabled value='1' style='text-align:center;'>
+            </td>
+
+            <td> <b>Fecha</b>: </td>
+            <td> 13/03/2020 </td>
+
+            <td> <b>Hora</b>: </td>
+            <td> 10:26 </td>
+            
+            <td width="75"> <b>Arqueo Nº</b>: </td>
+            <td width="75"><input type='text' name='arq_nro' size='4' disabled value='1' style='text-align:center;'></td>
+            <!--select max +1-->
+        </tr>
+
+        <tr>
+        <td class='negrita'>Cliente:</td>
+            <td width='15'>Id:</td>
+            <td width='70'><input type='text' name='id_cli' size='1'
+                value='1' disabled></td>
+
+            <td width='15'>Nombre:</td>
+            <td width='170'><input type='text' name='cli_nom' size='15'
+                value='Fabiola' disabled></td>
+
+            <td width='15'>Apellido:</td>
+            <td width='170'><input type='text' name='cli_ape' size='15'
+                value='Gimenez' disabled></td>
+
+            <td>RUC:</td>
+            
+            <td><input type='text' name='cli_ruc' size='10' required disabled value=6457235-2></td>
+        </tr>
+
+        <tr>
+            <td class='negrita' width="80">Vendedor:</td>
+            <td>Id:</td>
+            <td><input type='text' name='id_vend' size='1'
+                value='2' disabled></td>
+
+            <td>Nombre:</td>
+            <td><input type='text' name='vend_nom' size='15'
+                value='Mirta' disabled></td>
+
+            <td>Apellido:</td>
+            <td><input type='text' name='vend_ape' size='15'
+                value='Oviedo' disabled></td>
+
+            <td>CI:</td>
+            <td><input type='text' name='vend_ci' size='10'
+                value="3646533" disabled></td>
+        </tr>
+        </table>
+            
+        <table border="1" width='905' align="center" cellspacing="0">
+        <form action='<?php echo $_SERVER['PHP_SELF']; ?>
+        <tr>
+            <td colspan="9">Artículo<input type="text" name="busca_art" value="Taza personalizada" size="30"><input type="submit" value="buscar"></td>
+        </tr></form>
+
+        <tr class='campos'>
+            <td width='3'>Código</td>
+            <td width='10'>Cantidad</td>
+            <td width='10'>Descripción</td>
+            <td width='10'>Stock</td>
+            <td width='10'>Precio Unitario</td>
+            <td width='10'>Impuesto</td>
+        </tr>
+
+        <form action='controlador/agregar.php' method='post'>
+
+        <tr align='center'>
+            <td><input type='text' name='id_art' size='3' style='text-align:center;'
+            value='2'></td>
+            <td><input type='text' name='cantidad' size='5' style='text-align:center;' value="1" required></td>
+            <td><input type='text' name='articulo' size='37' style='text-align:center;'
+            value='Taza personalizada'></td>
+            <td><input type='text' name='stock' size='10' style='text-align:center;'
+            value='20'></td>
+            <td><input type='text' name='precio_unitario' size='10' style='text-align:center;'
+            value='20000'></td>
+            <td><input type='text' name='impuesto' size='10' style='text-align:center;'
+            value='5%'></td>
+            <td align='left'><input type='submit' name='agregar' value='agregar'></td>
+            <td></td>
+        </tr>
+        </form>
+
+        <tr>
+            <td colspan='9' style='text-align:left;'><b> Excede stock </b></td>
+        </tr>
+
+        <tr>
+            <td colspan='9' style='text-align:left;' font><b> Cantidad debe ser natural </b></td>
+        </tr>
+
+        <form action='controlador/generaVenta.php' method='post'>
+            <tr class='campos2'>
+                <td width='3'>Código</td>
+                <td width='10'>Cantidad</td>
+                <td width='10'>Descripción</td>
+                <td width='10'>Precio Unitario</td>
+                <td width='10'>Exenta</td>
+                <td width='10'>5%</td>
+                <td width='10'>10%</td>
+            </tr>
+
+            <tr align='center'>
+                <td><input type='text' name='id_art2' size='3' style='text-align:center;'
+                disabled value='1'></td>
+                <td><input type='text' name='cantidad2' size='5' style='text-align:center;' disabled
+                value='1'></td>
+                <td><input type='text' name='articulo2' size='37' style='text-align:center' disabled
+                value='Remera personalizada'></td>
+                <td><input type='text' name='precio_unitario2' size='10' style='text-align:center;' disabled
+                value='40000'></td>
+
+                <td><input type='text' name='l_exenta' size='10' style='text-align:center;' disabled
+                value='40000'></td>
+                <td><input type='text' name='l_iva5' size='10' style='text-align:center;' disabled
+                value=' '></td>
+                <td><input type='text' name='l_iva10' size='10' style='text-align:center;' disabled
+                value=' '></td>
+
+                <td align='left'><a href='controlador/quitar.php?in=$i'><input type='button' value='quitar'></a>
+                </td>
+            </tr>
+
+        </table>
+
+        <table border="1" width="905" cellspacing="0">
+
+        <tr>
+            <td width='15'></td>
+            <td width='506'> Subtotales </td>
+            <td width='10'>
+            <input type='text' name='st_e' size='10' style='text-align:center;' disabled value='40000'>
+            </td>
+            <td width='10'>
+            <input type='text' name='st_5' size='10' style='text-align:center;' disabled value=' '>
+            </td>
+            <td width='10'>
+            <input type='text' name='st_10' size='10' style='text-align:center;' disabled value=' '>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan='3'>
+            <b>Total</b> guaraníes 
+            
+            <input type='text' name='letra' size='55' style='text-align:center;' disabled value='Cuarenta mil'></td>
+            <td align='center'><b>Total:<b></td>
+            <td><input type='text' name='total' size='10' style='text-align:center;' disabled value='40000'></td>
+        </tr>
+
+        <tr>
+            <td colspan='3'>Liquidación del IVA(5%)
+            <input type='text' name='l_5' size='10' style='text-align:center;' disabled value=' '>
+            (10%)
+            <input type='text' name='l_10' size='10' style='text-align:center;' disabled value=' '>
+            Total IVA:
+            <input type='text' name='t_i' size='10' style='text-align:center;' disabled value=' '>
+            </td>
+            
+        </tr>
+
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="6" align="center">
+                    <a href="controlador/reset.php"><input type='button' name='boton_nueva' value='Nueva' class='boton_nueva'></a>
+
+                    <input type='submit' name='boton_registrar' value='Registrar' class='boton_registrar'>
+                    
+                    <a href="controlador/llevaAfactura.php"><input type='button' name='boton_factura' value='Factura' class='boton_factura'></a>
+
+                    <a href="controlador/reset.php"><input type='button' name='boton_cancelar' value='Cancelar' class='boton_cancelar'></a>
+
+                    <a href="vista/lista_ventas.php"><input type='button' name='boton_ver' value='Ver ventas' class='boton_ver'></a>
+                
+                    <a href="controlador/cierra_sesion.php"><input type='button' name='boton_salir' value='Salir' class='boton_salir'></a>
+
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>

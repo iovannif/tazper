@@ -1,0 +1,330 @@
+/* Cabecera */
+#cabecera{
+    width:fit-content;
+    background:#FAFAFA;
+    text-shadow: 0 0 0 #939393;
+}
+.cabecera td{
+    text-align:left;
+    padding: 0 15px 10px 0;
+}
+#cabecera input,#cabecera select{    
+    height: 24px;
+    padding: 4px !important;
+    font-size: 14px;
+    border:1px solid #999999;
+    border-radius: 3px;
+    color:black;
+    background:#FCFCFC;        
+    margin: 0 0 4px 6px;    
+    box-shadow: inset 0px 0px 1px 1px #f7f7f7;
+}
+.bottom{
+    margin-bottom: 0 !important;
+}
+.col_sep{
+    padding-left:15px;
+}
+#pedprov{
+    display:none;
+}
+.hidden{
+    display:none;
+}    
+/* #prov_dir{
+    margin-left: -27px !important;
+} */
+#cabecera select{
+    padding:2px !important;
+}
+#proveedores{    
+    left: 186px;
+    top: 192px;
+    width: 215px !important;    
+    z-index: 1;
+}
+#proveedores li{
+    height:24px;
+    font-size: 14px;
+    padding: 2px 0px 0px 3px;
+}
+
+/* Articulo */
+.botones{
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px 4px;
+    /* margin: 0 -12px 0 -8px; */
+    /* font-size: 16px; */
+    border-radius:3px;
+}
+/* buscador */
+#articulo{
+    text-shadow: 0 0 0 #939393;
+    color:#3a2541;
+}
+#busqueda{
+    position: relative;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 24px;
+    padding: 3px;
+}
+/* cuadro */
+#resultados{
+    position: absolute;
+    left: 170px;
+    top: 230px;
+    background:#fff;
+    border:1px solid gray;
+    padding:0;
+    display:inline-block;
+    margin:0;
+    width:280px;    
+    border-radius: 3px;    
+    text-shadow: none;
+}
+#resultados li{
+    list-style: none;
+    margin:left;
+    margin: 0;
+    border-bottom:1px solid lightgray;
+    padding-left: 2px;
+    cursor:hand;
+}
+#articulos{
+    width:fit-content;
+}
+/* tabla */
+#tabla_articulo{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-bottom:20px;
+    cursor:default;
+}
+#tabla_articulo td{
+    padding:0;    
+}
+#tabla_articulo .head{
+    background: #F9F9F9;
+    color:#C90000;    
+    text-align:center;
+    font-size:15px;    
+}
+#tabla_articulo .head td{
+    text-shadow: 1px 1px 1px #808080;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;    
+    box-shadow: 0px 0px 1px 0px rgb(102, 102, 102);
+}
+/* #tabla_articulo .head .blank{
+    background:#fff;
+    box-shadow: none;
+} */
+#tabla_articulo .agregar td{    
+    box-shadow: 0px 0px 1px 0px grey;
+}
+#tabla_articulo input{
+    border-radius:0 !important;
+    text-align:center;
+    border:1px solid grey;
+    color:black;
+    /* text-shadow:none !important; */
+}
+.agregar input{
+    /* text-align:center !important; */
+    height:27px;
+}
+#art_med{
+    border:0 !important;
+    box-shadow:none;
+    /* text-align:left !important; */
+    margin-left: -3px;
+}
+.td_agregar{
+    box-shadow: none !important;
+    padding-left:4px !important;
+}
+#agregar{
+    margin-left:0px;
+    margin-right:4px;
+    background:#72BB82;
+    border:#72BB82;
+    padding:2px 4px !important;
+    font-size: 15px;
+}
+#agregar:hover{
+    background:#5A9668;
+    border:#5A9668;
+}
+/* .blank{
+    background: #FAFAFA;
+} */
+
+/* Detalle */
+/* #detalle{
+    font-family: Raleway;                    
+} */
+#detalle{
+    font-family: arial !important;
+}
+/*detalle tabla (lista art)*/
+.detalle{
+    cursor:default;
+    /* border-bottom: 0.1px solid lightgray; */
+}
+.detalle td{
+    text-align:center;
+}
+.detalle .head td{
+    border-radius:3%;
+    text-shadow: 1px 1px 1px #000;
+    padding:4px 12px;
+    background: rgb(223, 29, 29);
+    color:white;
+    box-shadow: 0px 0px 1px 0px darkred;
+}
+/* .detalle .head .blank{
+    background:#fff;
+    box-shadow: none;
+} */
+.detalle .linea td{    
+    border-right: 0.1px solid lightgray;
+}
+.detalle .linea:nth-child(odd) {
+    background-color:#EEEEEE;
+}
+.detalle .linea:nth-child(even) {
+    background-color:#fbfbfb;
+}
+.detalle input{
+    border:none !important;
+    box-shadow:none !important;
+    background:none !important;
+}
+.linea input{
+    margin:0;
+    border:none;
+    background:none;
+    text-align:center;
+    height:25px;
+}
+.detalle input:not(.unimed){    
+    text-align:center;    
+}
+.linea input:disabled{
+    color: black;
+    /* text-shadow:none !important; */
+}
+.cant{
+    text-align:right !important;
+}
+.td_quitar,.opciones{
+    border:none !important;
+    background:#F1F1F1;
+}
+.mas{
+    background:#5981FF;
+    border:1px solid #2C34E8;
+    margin: 0 2px !important;
+}
+.mas:hover{
+    background:#2C34E8;
+    border:1px solid #2C34E8;
+}
+.menos{
+    background:#FF6833;
+    border:1px solid #FE4C28;
+    margin: 0 2px !important;
+    padding: 1px 5px;
+}
+.menos:hover{
+    background:#FE4C28;
+    border:1px solid #FE4C28;
+}
+.quitar{
+    margin: 0 2px !important;
+    background:#DF4C4C;
+    border:#DF4C4C;
+    padding:2px 5px !important;
+    font-size:15px !important;
+}
+.quitar:hover{
+    background:red;
+    border:red;
+}
+
+/* Totales */
+#total{
+    /* padding: 0 6px;    */
+    font-family:arial !important;
+    border:1px solid grey !important;
+}
+#total, #total table{
+    font-size:14px !important;
+    /* color:black; */
+    /* text-shadow: none; */
+    text-shadow: 0 0 0 lightgray;
+    /* border:1px solid black; */
+} 
+#total table td{
+    border:1px solid grey;
+    border-top:none;    
+}
+.sub_tot{
+    width:704px;
+    border-left:none !important;
+    padding-left:6px;   
+}
+.tot_let{
+    border-left:none !important;   
+    border-right:none !important;  
+    padding-left:6px;      
+}
+.tot{
+    border-left:none !important;   
+}
+.filler{
+    border-right:none !important;
+    width:168px;
+}
+.liq_iva{
+    border-left:none !important;   
+    border-right:none !important;    
+    border-bottom:none !important; 
+    padding-left:6px;
+    padding-bottom:2px;
+}
+#total input{    
+    height: 24px;
+    padding: 4px !important;
+    font-size: 14px;
+    /* border:1px solid #999999; */
+    border:none;    
+    border-radius: 3px;
+    color:black;
+    background:#FCFCFC;        
+    box-shadow: inset 0px 0px 1px 1px #f7f7f7;
+    text-align:center;
+}
+.liq_iva input{
+    margin-right:70px;  
+    border:1px solid #999999 !important; 
+    width:89px; 
+}
+
+/* Navegacion 2 */
+.masiva{
+    position:absolute;
+    bottom: -46px;
+    left: 345px;
+    font-family: arial;		
+    font-size: 15px;
+}
+#masiva{
+    vertical-align: middle;
+    cursor:hand;
+}

@@ -1,0 +1,364 @@
+/* Cabecera */
+#cabecera{
+    width:fit-content;
+    background:#FAFAFA;
+    text-shadow: 0 0 0 #939393;
+}
+.cabecera td{
+    text-align:left;
+    padding: 0 15px 10px 0;
+}
+#cabecera input,#cabecera select{    
+    height: 24px;
+    padding: 4px !important;
+    font-size: 14px;
+    border:1px solid #999999;
+    border-radius: 3px;
+    color:black;
+    background:#FCFCFC;        
+    margin: 0 0 4px 6px;    
+    box-shadow: inset 0px 0px 1px 1px #f7f7f7;
+}
+.bottom{
+    margin-bottom: 0 !important;
+}
+.col_sep{
+    padding-left:15px;
+}
+#prov_dir{
+    margin-left: -27px !important;
+}
+#cabecera select{
+    padding:2px !important;
+}
+#proveedores{    
+    left: 186px;
+    top: 192px;
+    width: 180px !important;
+    z-index: 1;
+}
+#proveedores li{
+    height:24px;
+    font-size: 14px;
+    padding: 2px 0px 0px 3px;
+}
+
+/* cuadros js */
+.lista_js{
+    position: absolute;
+    left: 361px;
+    top: 357px;
+    background: #fff;
+    border: 1px solid gray;
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+    width: 289px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 0px lightgrey;
+    cursor:hand;
+    font-size:15px;
+}
+.item_js{
+    list-style: none;
+    padding: 2px 0 0 7px;
+    border-bottom:1px solid lightgray;
+}
+.item_js:hover{
+    background:lightblue;
+}
+.resultado{
+    padding:0 !important;
+}
+#id{
+    display:none;
+}
+#cambiar,.cambiar{
+    display:none;
+    padding-bottom: 4px;
+    text-shadow: 1px 1px 1px #000;
+    color:white;
+    background:#FF5733;
+    border:1px solid orangered;
+    margin-left:6px;
+    border-radius:3px;
+    box-shadow: 1px 1px 1px 0px darkgrey;
+}
+#cambiar:hover,.cambiar:hover{
+    background:orangered;
+    outline:none;
+}
+
+/* Articulo */
+/* buscador */
+#articulo{
+    text-shadow: 0 0 0 #939393;
+}
+#busqueda{
+    position: relative;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 24px;
+    padding: 3px;
+}
+
+#resultados{
+    position: absolute;
+    left: 160px;
+    background:#fff;
+    border:1px solid gray;
+    padding:0;
+    display:inline-block;
+    margin:0;
+    
+}
+#resultados li{
+    list-style: none;
+    margin:left;
+    margin: 0;
+    border-bottom:1px solid lightgray;
+}
+
+#articulos{
+    width:fit-content;
+}
+
+
+
+
+
+/* carga articulo */
+#tabla_articulo{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-bottom:20px;
+    cursor:default;
+}
+#tabla_articulo td{
+    padding:0;    
+}
+#tabla_articulo .head{
+    background: #F9F9F9;
+    color:#C90000;    
+    text-align:center;
+    font-size:15px;    
+}
+#tabla_articulo .head td{
+    text-shadow: 1px 1px 1px #808080;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;    
+    box-shadow: 0px 0px 1px 0px rgb(102, 102, 102);
+}
+#tabla_articulo .head .blank{
+    background:#fff;
+    box-shadow: none;
+}
+#tabla_articulo .agregar td{    
+    box-shadow: 0px 0px 1px 0px grey;
+}
+#tabla_articulo input{
+    border-radius:0 !important;
+    text-align:center;
+}
+#art_med{
+    border:0 !important;
+    box-shadow:none;
+    text-align:left !important;
+}
+.td_agregar{
+    box-shadow: none !important;
+    padding-left:4px !important;
+}
+
+.botones{
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px 4px;
+    margin: 0 -12px 0 -8px;
+    font-size: 16px;
+    border-radius:3px;
+}
+#agregar{
+    margin-left:0px;
+    margin-right:4px;
+    background:#72BB82;
+    border:#72BB82;
+    padding:2px 4px !important;
+}
+#agregar:hover{
+    background:#5A9668;
+    border:#5A9668;
+}
+
+.blank{
+    background: #FAFAFA;
+}
+
+.agregar input{
+    text-align:center !important;
+}
+
+#agregar{
+    margin-left:0px;
+    margin-right:4px;
+    background:#72BB82;
+    border:#72BB82;
+}
+#agregar:hover{
+    background:#5A9668;
+    border:#5A9668;
+}
+
+/* Detalle */
+
+#compra_detalle .head,
+#venta_detalle .head
+{
+    background: #C90000;
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+    text-align:center;
+    font-size:15px;
+}
+
+#compra_detalle .head td,
+#venta_detalle .head td
+{
+    padding:2px 12px;
+}
+
+.linea td{
+    text-align:center;
+    /* padding:1px 12px; */
+    /* border:1px solid black; */
+    
+    border:none;
+}
+
+.linea:nth-child(odd) {
+    background-color:#EEEEEE;
+}
+.linea:nth-child(even) {
+    background-color:#fbfbfb;
+}
+
+.linea input{
+    margin:0;
+    border:none;
+    background:none;
+    text-align:center;
+}
+
+.linea input:disabled{
+    color: black;
+}
+
+#mas{
+    background:#5981FF;
+    border:1px solid #2C34E8;
+}
+#mas:hover{
+    background:#2C34E8;
+    border:1px solid #2C34E8;
+}
+
+#menos{
+    background:#FF6833;
+    border:1px solid #FF5533;
+}
+#menos:hover{
+    background:#FF5533;
+    border:1px solid #FF5533;
+}
+
+#quitar{
+    background:#DF4C4C;
+    border:#DF4C4C;
+}
+#quitar:hover{
+    background:red;
+    border:red;
+}
+
+input:disabled{
+    background:#fff;
+}
+
+
+
+
+
+#material{        
+    left: 384px;
+    top: 496px;
+    width:288px !important;
+}
+
+/* Detalle */
+/* #detalle{
+    font-family: Raleway;                    
+} */
+/*detalle tabla (lista art)*/
+.detalle{
+    cursor:default;
+}
+.detalle td{
+    text-align:center;
+}
+.detalle .head td{
+    border-radius:3%;
+    text-shadow: 1px 1px 1px #000;
+    padding:4px 12px;
+    background: rgb(223, 29, 29);
+    color:white;
+    box-shadow: 0px 0px 1px 0px darkred;
+}
+.detalle .head .blank{
+    background:#fff;
+    box-shadow: none;
+}
+.detalle .linea td{    
+    border-right: 0.1px solid lightgray;
+}
+.detalle .linea:nth-child(odd) {
+    background-color:#EEEEEE;
+}
+.detalle .linea:nth-child(even) {
+    background-color:#fbfbfb;
+}
+.detalle input{
+    border:none !important;
+    box-shadow:none !important;
+    background:none !important;
+}
+.detalle input:not(.unimed){    
+    text-align:center !important;    
+}
+
+.td_quitar{
+    background:#fff !important;
+}
+.quitar{
+    margin-left: 0px;
+    margin-right: 4px;
+    background:#DF4C4C;
+    border:#DF4C4C;
+    visibility:hidden;
+    padding:2px 5px !important;
+}
+.quitar:hover{
+    background:red;
+    border:red;
+}
+
+/* Totales */
+
+/* Navegacion 2 */
+.masiva{
+    position:absolute;
+    bottom: -347px;
+    left: 345px;		
+}
